@@ -79,7 +79,22 @@ case $ext in
 esac
 ```
 ### 6: Convertir temperaturas 
+```bash
+#!/bin/bash
+echo "Elige una conversión :"
+echo "1. Celsius a Fahrenheit"
+echo "2. Fahrenheit a Celsius"
+echo "3. Celsius a Kelvin"
+read -p "Introduce una opción (1-3): " opcion
+read -p "Escribe  la temperatura: " temp
 
+case $opcion in
+  1) echo "Resultado: $(echo "$temp * 1.8 + 32" | bc -l) °F" ;;
+  2) echo "Resultado: $(echo "($temp - 32) / 1.8" | bc -l) °C" ;;
+  3) echo "Resultado: $(echo "$temp + 273.15" | bc -l) K" ;;
+  *) echo "Opción equivocada" ;;
+esac
+```
 ### 7: Estado del servicio
 ```bash
 #!/bin/bash
