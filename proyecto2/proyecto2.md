@@ -7,48 +7,27 @@ Este documento describe la estructura del dominio, la automatización del alta d
 El objetivo de este proyecto es garantizar una gestión eficiente de los usuarios y equipos dentro de la red del centro educativo, asegurando que cada usuario tenga acceso a los recursos necesarios y que la seguridad esté controlada en todo momento.
 
 ## 2. Estructura del Dominio
-
 ### 2.1 Unidades Organizativas (OUs)
-
 La estructura de Unidades Organizativas (OUs) permite organizar los usuarios y equipos de forma jerárquica, facilitando la asignación de permisos y políticas de seguridad. Se crearán las siguientes OUs dentro del dominio:
+- **CentroEducativo** (OU principal)
+  - **Usuarios**
+    - **Alumnos**
+      - ASIR
+        - Primero
+        - Segundo
+      - SMR
+        - Primero
+        - Segundo
+      - DAM
+        - Primero
+        - Segundo
+      - DAW
+        - Primero
+        - Segundo
+    - **Profesores**
+  - **Equipos**
+    - **Aulas** (Cada aula con sus respectivos equipos)
 
-CentroEducativo (OU principal)
-
-Usuarios
-
-Alumnos
-
-ASIR
-
-Primero
-
-Segundo
-
-SMR
-
-Primero
-
-Segundo
-
-DAM
-
-Primero
-
-Segundo
-
-DAW
-
-Primero
-
-Segundo
-
-Profesores
-
-Equipos
-
-Aulas (Cada aula con sus respectivos equipos)
-
-La organización en OUs permite una mejor aplicación de políticas de seguridad, así como una administración más eficiente del dominio.
 
 ### 2.2 Grupos de Seguridad
 
